@@ -1,16 +1,18 @@
 <html ng-app="schoolAngularApp">
    <head>
       <title>Test</title>
-      <link href="/site.css" rel="stylesheet" />
-      <script src="/angular.js"></script>
-      <script src="/app.js"></script>
+      <link href="/styles/site.css" rel="stylesheet" />
+      <script src="/scripts/angular.js"></script>
+      <script src="/scripts/task.js"></script>
+      <script src="/scripts/data.js"></script>
+      <script src="/scripts/app.js"></script>
    </head>
    <body ng-controller="MainController">
       <header>
          <h1>{{message}} {{version}}</h1>
          <input type="text" ng-model="message" />
       </header>
-      <img ng-src="{{image.src}}"  height="{{image.height}}" />
+      <div ng-include="'partial/ship.html'"></div>
       <button ng-click="next()">Next</button>
    </body>
 </html>
