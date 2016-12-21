@@ -1,5 +1,6 @@
 import Controller from "./controller.js";
 import path from "path";
+import { ships } from "./data.js";
 
 export default class HomeController extends Controller {
    constructor(app) {
@@ -21,81 +22,12 @@ export default class HomeController extends Controller {
       app.get(this.route + "api/ships/:id", (req, res) => {
          this.onRequestReceived(req);
          var id = req.params.id;
-         res.send(ships[id]);
+         if(id === "length"){
+            res.send(ships.length.toString());
+         }
+         else {
+            res.send(ships[id]);
+         }
       });
    }
 }
-
-var ships = [
-            {
-               class : "Kastan",
-               project: "1001",
-               type : "Partol",
-               weapons: [
-                  {
-                     type: "artilery",
-                     name: "76mm gun",
-                     count: 1
-                  },
-                  {
-                     type : "AAA",
-                     name : "Medium range AA missile",
-                     count: 8
-                  },
-                  {
-                     type : "AAA",
-                     name: "30mm AA gun",
-                     count: 2
-                  }
-               ]
-            },
-            {
-               class : "Gradok",
-               project: "1002",
-               type : "ASW",
-               weapons: [
-                  {
-                     type: "artilery",
-                     name: "76mm gun",
-                     count: 1
-                  },
-                  {
-                     type : "ASW",
-                     name : "320mm torpedo",
-                     count: 4
-                  },
-                  {
-                     type : "ASW",
-                     name : "ASW rocket launcher",
-                     count: 1
-                  },
-                  {
-                     type : "AAA",
-                     name: "30mm AA gun",
-                     count: 2
-                  },
-                  {
-                     type: "gun",
-                     name: "14.5mm gun",
-                     count: 2
-                  }
-               ]
-            },
-            {
-               class : "Mirak",
-               project: "1003",
-               type : "Patrol",
-               weapons: [
-                  {
-                     type: "artilery",
-                     name: "76mm gun",
-                     count: 1
-                  },
-                  {
-                     type : "AAA",
-                     name: "30mm AA gun",
-                     count: 2
-                  }
-               ]
-            }
-         ];
