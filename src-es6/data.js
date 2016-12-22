@@ -1,5 +1,6 @@
 export var ships = [
             {
+               img: "Img1.jpg",
                class : "Kastan",
                project: "1001",
                type : "Partol",
@@ -29,6 +30,7 @@ export var ships = [
                ]
             },
             {
+               img: "Img2.jpg",
                class : "Gradok",
                project: "1002",
                type : "ASW",
@@ -68,6 +70,7 @@ export var ships = [
                ]
             },
             {
+               img: "Img3.jpg",
                class : "Mirak",
                project: "1003",
                type : "Patrol",
@@ -92,6 +95,7 @@ export var ships = [
                ]
             },
             {
+               img: "Img4.jpg",
                class : "Buyan-M",
                project: "21631",
                type : "Multirole corvette",
@@ -136,6 +140,7 @@ export var ships = [
                ]
             },
             {
+               img: "Img5.jpg",
                class : "Derzky",
                project: "20386",
                type : "Multirole corvette",
@@ -171,6 +176,51 @@ export var ships = [
                      type: "ASW",
                      name: "Paket NK torpedo",
                      count: 8
+                  }
+               ]
+            },
+            {
+               img: "Img6.jpg",
+               class : "Gremyashchiy",
+               project: "20385",
+               type : "Multirole corvette",
+               status: "Building",
+               displacement: 2200,
+               range: 3800,
+               endurance: 15,
+               speed: 26,
+               length: 104,
+               beam: 11,
+               weapons: [
+                  {
+                     type: "artilery",
+                     name: "A190 100mm gun",
+                     count: 1
+                  },
+                  {
+                     type : "strategic",
+                     name : "Kalibar NK cruise missile",
+                     count: 8
+                  },
+                  {
+                     type : "AAA",
+                     name : "Redut medium range AA missile",
+                     count: 16
+                  },
+                  {
+                     type : "AAA",
+                     name: "AK630 30mm AA gun",
+                     count: 2
+                  },
+                  {
+                     type: "ASW",
+                     name: "Paket NK torpedo",
+                     count: 8
+                  },
+                  {
+                     type: "machine gun",
+                     name: "14.5mm machine gun",
+                     count: 2
                   }
                ]
             }
