@@ -19,6 +19,11 @@ export default class HomeController extends Controller {
          res.send("0.0.1");
       });
 
+      app.get(this.route + "api/ships", (req, res) => {
+         this.onRequestReceived(req);
+         res.send(ships);
+      });
+
       app.get(this.route + "api/ships/:id", (req, res) => {
          this.onRequestReceived(req);
          var id = req.params.id;
