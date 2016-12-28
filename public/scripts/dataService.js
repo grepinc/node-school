@@ -2,7 +2,7 @@
    function dataAccess($http){
       var http = $http;
       var ships = {};
-      var props = { version: null, shipsCount: null };
+      var props = { version: null, shipsCount: null, ships: null };
       var shipsCount = null;
       var version = null;
 
@@ -22,6 +22,14 @@
          return task;
       }
 
+      function getShips(){
+         return getProperty("ships", "/api/ships", function(ships){
+            for(var i=0; i < ships.length; ++i){
+               ships[i].index = i;
+            }
+         });
+      }
+
       function getShipsCount(){
          return getProperty("shipsCount", "/api/ships/length");
       }
@@ -30,7 +38,7 @@
          return getProperty("version", "/version");
       }
 
-      function getProperty(name, url) {
+      function getProperty(name, url, onfetch) {
          var task = new Task();
          if(props[name] !== null){
             task.resolve(props[name]);
@@ -38,6 +46,9 @@
          else {
             http.get(url).then(function(response){
                props[name] = response.data;
+               if(onfetch){
+                  onfetch(props[name]);
+               }
                task.resolve(response.data);
             });
          }
@@ -47,7 +58,8 @@
       return {
          getShip: getShip,
          getShipsCount: getShipsCount,
-         getVersion: getVersion
+         getVersion: getVersion,
+         getShips: getShips
       }
    }
 

@@ -1,0 +1,17 @@
+<a href="/#!/main">Back</a>
+<h1>{{data.project}} {{data.name}}</h1>
+
+<img ng-src="images/{{data.img}}"  height="{{image.height}}" />
+<div>
+   <p>{{data.class}} class</p>
+   <p>Project {{data.project}}</p>
+   <p>Displacement: {{data.displacement}} t</p>
+   <p>Length: {{data.length}} m <p>
+   <p>Endurance: {{data.endurance}} days</p>
+   <p>Weapons:</p>
+   <ul>
+      <li ng-repeat="w in data.weapons">
+         {{w.name}} x {{w.count}}
+      </li>
+   </ul>
+</div>

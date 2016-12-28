@@ -1,0 +1,27 @@
+
+   <h1>{{message}} {{version}}</h1>
+   <input type="text" ng-model="message" />
+
+   <table>
+      <thead>
+         <tr>
+            <th>Project</th>
+            <th>Name</th>
+            <th>&nbsp;</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr ng-repeat="ship in ships">
+            <td>
+               <a href="/#!/ship/{{ship.index}}">{{ship.project}}</a>
+            </td>
+            <td>
+               {{ship.class}}
+            </td>
+            <td>
+               <img ng-src="images/{{ship.img}}"  height="{{image.height}}" />
+            </td>
+         </tr>
+      </tbody>
+   </table>
+

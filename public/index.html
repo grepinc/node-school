@@ -7,15 +7,17 @@
       <script src="/scripts/task.js"></script>
       <!--<script src="/scripts/data.js"></script>-->
       <script src="/scripts/app.js"></script>
-      <script src="/scripts/home.js"></script>
+      <script src="/scripts/mainController.js"></script>
+      <script src="/scripts/shipController.js"></script>
       <script src="/scripts/dataService.js"></script>
    </head>
-   <body ng-controller="MainController">
+   <body>
       <header>
-         <h1>{{message}} {{version}}</h1>
-         <input type="text" ng-model="message" />
+         <h1>
+
+         </h1>
       </header>
-      <div ng-include="'partial/ship.html'"></div>
-      <button ng-click="next()">Next</button>
+      <section ng-view>
+      </section>
    </body>
 </html>
