@@ -1,6 +1,7 @@
 <html ng-app="schoolAngularApp">
    <head>
       <title>Test</title>
+      <link href="/styles/bootstrap.css" rel="stylesheet" />
       <link href="/styles/site.css" rel="stylesheet" />
       <script src="/scripts/angular.js"></script>
       <script src="/scripts/angular-route.js"></script>
@@ -9,13 +10,19 @@
       <script src="/scripts/app.js"></script>
       <script src="/scripts/mainController.js"></script>
       <script src="/scripts/shipController.js"></script>
+      <script src="/scripts/bootController.js"></script>
+      <script src="/scripts/angularController.js"></script>
       <script src="/scripts/dataService.js"></script>
+      <script src=""></script>
    </head>
-   <body>
+   <body class="container-fluid">
       <header>
-         <h1>
-
-         </h1>
+         <h1>Russian navy ships - present and future</h1>
+         <nav>
+               <a class="btn btn-default" href="/#!/main">Home</a>
+               <a class="btn btn-default" href="/#!/angular">Angular</a>
+               <a class="btn btn-default" href="/#!/bootstrap">Bootstrap</a>
+         </nav>
       </header>
       <section ng-view>
       </section>

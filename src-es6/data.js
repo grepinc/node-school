@@ -1,6 +1,8 @@
 export var ships = [
             {
                img: "Img1.jpg",
+               description: "Small patrol boat concept",
+               quote: "...small, fast, and ready to fight...",
                class : "Kastan",
                project: "1001",
                type : "Partol",
@@ -31,6 +33,8 @@ export var ships = [
             },
             {
                img: "Img2.jpg",
+               description: "Small ASW and patrol corvette concept",
+               quote: "...looking good, fighting good...",
                class : "Gradok",
                project: "1002",
                type : "ASW",
@@ -71,6 +75,8 @@ export var ships = [
             },
             {
                img: "Img3.jpg",
+               description: "Small patrol boat concept",
+               quote: "...lightly armed, but does the job...",
                class : "Mirak",
                project: "1003",
                type : "Patrol",
@@ -96,6 +102,8 @@ export var ships = [
             },
             {
                img: "Img4.jpg",
+               description: "Medium sized patrol corvette and strategic missile carrier",
+               quote: "...redefines the idea of a corvette...",
                class : "Buyan-M",
                project: "21631",
                type : "Multirole corvette",
@@ -141,6 +149,8 @@ export var ships = [
             },
             {
                img: "Img5.jpg",
+               description: "Very large prospective stealth multirole corvette",
+               quote: "...trully a ship of the future...",
                class : "Derzky",
                project: "20386",
                type : "Multirole corvette",
@@ -182,6 +192,8 @@ export var ships = [
             {
                img: "Img6.jpg",
                class : "Gremyashchiy",
+               quote: "...essencially a light frigate...",
+               description: "Large ocean-going multirole corvette",
                project: "20385",
                type : "Multirole corvette",
                status: "Building",

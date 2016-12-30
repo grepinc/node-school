@@ -1,7 +1,14 @@
 <a href="/#!/main">Back</a>
-<h1>{{data.project}} {{data.name}}</h1>
-
-<img ng-src="images/{{data.img}}"  height="{{image.height}}" />
+<h1>{{data.project}} {{data.class}}</h1>
+<p class="lead">{{data.description}}</p>
+<blockquote>
+      <p>{{data.quote}}</p>
+      <small><cite>Anton Sokolov, head of <abbr title="Sokolov naval design buroe">SNDB</abbr></cite></small>
+</blockquote>
+<!--<img ng-src="images/{{data.img}}"  height="{{image.height}}" />-->
+<img class="img-rounded" ng-src="images/{{data.img}}"  height="{{image.height}}" />
+<!--<img class="img-circle" ng-src="images/{{data.img}}"  height="{{image.height}}" />
+<!--<img class="img-thumbnail" ng-src="images/{{data.img}}"  height="{{image.height}}" />-->
 <div>
    <p>{{data.class}} class</p>
    <p>Project {{data.project}}</p>

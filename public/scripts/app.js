@@ -8,6 +8,12 @@
       }).when("/ship/:index", {
          templateUrl: "views/ship.html",
          controller: "shipController"
+      }).when("/bootstrap", {
+         templateUrl: "views/bootstrap.html",
+         controller: "bootController"
+      }).when("/angular", {
+         templateUrl: "views/angular.html",
+         controller: "angularController"
       }).otherwise({redirectTo: "/main"});
 
    });
