@@ -1,7 +1,10 @@
 (function(){
-   var app = angular.module("schoolAngularApp")
+   var app = angular.module("schoolAngularApp");
+   var name = "angular";
 
-   app.controller("angularController", function($scope, $location, data){
+   app.controller("angularController", function($scope, $location, data, nav){
+      nav.setActiveNav(name);
+
       $scope.message = "Hello Angular";
 
       data.getVersion().success(function(result){

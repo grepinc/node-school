@@ -1,24 +1,37 @@
-<a href="/#!/main">Back</a>
+<a class="btn btn-danger" href="/#!/main">Back</a>
 <h1>{{data.project}} {{data.class}}</h1>
-<p class="lead">{{data.description}}</p>
-<blockquote>
-      <p>{{data.quote}}</p>
-      <small><cite>Anton Sokolov, head of <abbr title="Sokolov naval design buroe">SNDB</abbr></cite></small>
-</blockquote>
-<!--<img ng-src="images/{{data.img}}"  height="{{image.height}}" />-->
-<img class="img-rounded" ng-src="images/{{data.img}}"  height="{{image.height}}" />
-<!--<img class="img-circle" ng-src="images/{{data.img}}"  height="{{image.height}}" />
-<!--<img class="img-thumbnail" ng-src="images/{{data.img}}"  height="{{image.height}}" />-->
-<div>
-   <p>{{data.class}} class</p>
-   <p>Project {{data.project}}</p>
-   <p>Displacement: {{data.displacement}} t</p>
-   <p>Length: {{data.length}} m <p>
-   <p>Endurance: {{data.endurance}} days</p>
-   <p>Weapons:</p>
-   <ul>
-      <li ng-repeat="w in data.weapons">
-         {{w.name}} x {{w.count}}
-      </li>
-   </ul>
+<div class="row">
+   <div class="col-md-9 col-lg-8">
+      <div class="content">
+         <p class="lead">{{data.description}}</p>
+         <blockquote>
+               <p>{{data.quote}}</p>
+               <small><cite>Anton Sokolov, head of <abbr title="Sokolov naval design buroe">SNDB</abbr></cite></small>
+         </blockquote>
+         <!--<img ng-src="images/{{data.img}}"  height="{{image.height}}" />
+         <img class="img-rounded" ng-src="images/{{data.img}}"  height="{{image.height}}" />
+         <img class="img-circle" ng-src="images/{{data.img}}"  height="{{image.height}}" />-->
+         <img class="img-thumbnail" ng-src="images/{{data.img}}"  height="{{image.height}}" />
+      </div>
+   </div>
+   <div class="col-md-3 col-lg-4">
+      <div class="content">
+         <p>{{data.class}} class</p>
+         <p>Project {{data.project}}</p>
+         <p>Displacement: {{data.displacement}} t</p>
+         <p>Length: {{data.length}} m <p>
+         <p>Endurance: {{data.endurance}} days</p>
+         <p>Weapons:</p>
+         <ul>
+            <li ng-repeat="w in data.weapons">
+               {{w.name}} x {{w.count}}
+            </li>
+         </ul>
+      </div>
+   </div>
+</div>
+<div class="row hidden-xs content" ng-visible="data.images.length > 0">
+   <div class="col-sm-4 col-md-3" ng-repeat="img in data.images">
+      <img class="img-thumbnail" ng-src="images/{{img}}" />
+   </div>
 </div>

@@ -1,7 +1,10 @@
 (function(){
-   var app = angular.module("schoolAngularApp")
+   var app = angular.module("schoolAngularApp");
+   var name = "main";
 
-   app.controller("MainController", function($scope, $location, data){
+   app.controller("MainController", function($scope, $location, data, nav){
+      nav.setActiveNav(name);
+
       $scope.index = 0;
       $scope.image = { height: 100 };
 

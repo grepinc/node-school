@@ -63,6 +63,23 @@
       }
    }
 
+   function navUtils(){
+      var setActiveNav = function(name){
+         $("li.nav").removeClass("active");
+         $("#nav-" + name).addClass("active");
+      };
+
+      var unsetActiveNav = function(){
+         $("li.nav").removeClass("active");
+      };
+
+      return {
+         setActiveNav: setActiveNav,
+         unsetActiveNav : unsetActiveNav
+      }
+   }
+
    var app = angular.module("schoolAngularApp");
    app.factory("data", dataAccess);
+   app.factory("nav", navUtils)
 }());

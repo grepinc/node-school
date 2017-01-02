@@ -1,6 +1,7 @@
 export var ships = [
             {
                img: "Img1.jpg",
+               images: [],
                description: "Small patrol boat concept",
                quote: "...small, fast, and ready to fight...",
                class : "Kastan",
@@ -33,6 +34,7 @@ export var ships = [
             },
             {
                img: "Img2.jpg",
+               images: [],
                description: "Small ASW and patrol corvette concept",
                quote: "...looking good, fighting good...",
                class : "Gradok",
@@ -75,6 +77,7 @@ export var ships = [
             },
             {
                img: "Img3.jpg",
+               images: [],
                description: "Small patrol boat concept",
                quote: "...lightly armed, but does the job...",
                class : "Mirak",
@@ -102,6 +105,7 @@ export var ships = [
             },
             {
                img: "Img4.jpg",
+               images: [],
                description: "Medium sized patrol corvette and strategic missile carrier",
                quote: "...redefines the idea of a corvette...",
                class : "Buyan-M",
@@ -149,6 +153,7 @@ export var ships = [
             },
             {
                img: "Img5.jpg",
+               images: ["Img5.jpg", "Img5-2.jpg", "Img5-3.jpg", "Img5-4.jpg"],
                description: "Very large prospective stealth multirole corvette",
                quote: "...trully a ship of the future...",
                class : "Derzky",
@@ -191,6 +196,7 @@ export var ships = [
             },
             {
                img: "Img6.jpg",
+               images: [],
                class : "Gremyashchiy",
                quote: "...essencially a light frigate...",
                description: "Large ocean-going multirole corvette",

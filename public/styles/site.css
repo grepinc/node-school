@@ -1,4 +1,14 @@
+body {
+   background-color: blue;
+   padding-left:0.5em;
+   padding-right: 0.5em;
+}
+
 h1 {
+   color: white;
+}
+
+.content h1, header h1 {
    color: blue;
 }
 
@@ -18,4 +28,24 @@ div.h-1 {
 .space {
    /*padding-top: 0.5em;*/
    padding-bottom: 0.5em;
+}
+
+.row {
+   padding: 0;
+   margin: 0;
+}
+
+header, .content {
+   background-color: white;
+   border-radius: 0.2em;
+}
+
+.content {
+   margin-bottom: 0.5em;
+   padding-top: 0.2em;
+   padding-bottom: 0.5em;
+}
+
+.nav.navbar-nav.navbar-right {
+   margin-right: 1em;
 }
