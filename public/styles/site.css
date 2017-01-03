@@ -2,18 +2,37 @@ body {
    background-color: blue;
    padding-left:0.5em;
    padding-right: 0.5em;
+   margin-top: 5em;
+   color: white;
 }
 
-h1 {
-   color: white;
+.content, .content-left, .content-right {
+   margin-bottom: 0.5em;
+   padding-top: 0.2em;
+   padding-bottom: 0.5em;
+}
+
+.content-left {
+   padding-left: 0;
+   padding-right: 15px;
+}
+
+.content-right {
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.content, header {
+   color: black;
 }
 
 .content h1, header h1 {
    color: blue;
 }
 
-.table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #e6e6e6;
+header, .content {
+   background-color: white;
+   border-radius: 0.2em;
 }
 
 div.bordered {
@@ -30,22 +49,30 @@ div.h-1 {
    padding-bottom: 0.5em;
 }
 
+.logo {
+   font-size: 180%;
+}
+
+/*bootstrap overwrites*/
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e6e6e6;
+}
+
 .row {
    padding: 0;
    margin: 0;
 }
 
-header, .content {
-   background-color: white;
-   border-radius: 0.2em;
-}
-
-.content {
-   margin-bottom: 0.5em;
-   padding-top: 0.2em;
-   padding-bottom: 0.5em;
-}
-
 .nav.navbar-nav.navbar-right {
    margin-right: 1em;
+}
+
+.navbar-fixed-top {
+   margin-left: 0.5em;
+   margin-right: 0.5em;
+}
+
+.table {
+   color: inherit;
 }

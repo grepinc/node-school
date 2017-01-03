@@ -127,7 +127,8 @@ export var ships = [
                   {
                      type : "strategic",
                      name : "Kalibar NK cruise missile",
-                     count: 8
+                     count: 8,
+                     comment: "main"
                   },
                   {
                      type : "AAA",
@@ -175,7 +176,8 @@ export var ships = [
                   {
                      type : "strategic",
                      name : "Kalibar NK cruise missile",
-                     count: 8
+                     count: 8,
+                     comment: "main"
                   },
                   {
                      type : "AAA",
@@ -218,7 +220,8 @@ export var ships = [
                   {
                      type : "strategic",
                      name : "Kalibar NK cruise missile",
-                     count: 8
+                     count: 8,
+                     comment: "main"
                   },
                   {
                      type : "AAA",

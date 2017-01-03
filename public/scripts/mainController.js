@@ -4,6 +4,7 @@
 
    app.controller("MainController", function($scope, $location, data, nav){
       nav.setActiveNav(name);
+      $scope.nav = nav;
 
       $scope.index = 0;
       $scope.image = { height: 100 };

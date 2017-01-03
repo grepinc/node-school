@@ -4,6 +4,7 @@
       <link href="/styles/bootstrap.css" rel="stylesheet" />
       <link href="/styles/site.css" rel="stylesheet" />
       <script src="/scripts/jquery.js"></script>
+      <script src="/scripts/bootstrap.js"></script>
       <script src="/scripts/angular.js"></script>
       <script src="/scripts/angular-route.js"></script>
       <script src="/scripts/task.js"></script>
@@ -16,19 +17,23 @@
       <script src="/scripts/dataService.js"></script>
    </head>
    <body class="container-responsive">
-      <header class="navbar navbar-default">
+      <header class="navbar navbar-default navbar-fixed-top">
          <div class="navbar-header">
-            <h1>Russian navy ships - present and future</h1>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="glyphicon glyphicon-chevron-down"></span>
+            </button>
+            <h1 class="logo">Russian navy ships - present and future</h1>
+
          </div>
-         <nav>
-            <ul class="nav navbar-nav navbar-right">
-               <li class="nav active" id="nav-main"><a href="/#!/main">Home</a></li>
+         <nav class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right navbar-collapse">
+               <li class="nav" id="nav-main"><a href="/#!/main">Home</a></li>
                <li class="nav" id="nav-angular"><a href="/#!/angular">Angular</a></li>
                <li class="nav" id="nav-bootstrap"><a href="/#!/bootstrap">Bootstrap</a></li>
             </ul>
          </nav>
       </header>
-      <section ng-view>
-      </section>
+      <main ng-view>
+      </main>
    </body>
 </html>

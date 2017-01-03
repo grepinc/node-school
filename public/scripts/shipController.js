@@ -3,6 +3,8 @@
 
    app.controller("shipController", function($scope, $routeParams, data, nav){
       nav.unsetActiveNav();
+      $scope.nav = nav;
+
       $scope.image = { height: 400 };
       $scope.index = $routeParams.index;
       data.getShip($scope.index).success(function(ship){

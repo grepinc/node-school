@@ -4,6 +4,7 @@
 
    app.controller("angularController", function($scope, $location, data, nav){
       nav.setActiveNav(name);
+      $scope.nav = nav;
 
       $scope.message = "Hello Angular";
 

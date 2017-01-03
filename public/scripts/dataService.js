@@ -64,6 +64,9 @@
    }
 
    function navUtils(){
+      var mainPagePath = "/#!/main";
+      var mainPageName = "Home";
+
       var setActiveNav = function(name){
          $("li.nav").removeClass("active");
          $("#nav-" + name).addClass("active");
@@ -75,7 +78,9 @@
 
       return {
          setActiveNav: setActiveNav,
-         unsetActiveNav : unsetActiveNav
+         unsetActiveNav : unsetActiveNav,
+         mainPagePath: mainPagePath,
+         mainPageName: mainPageName
       }
    }
 
