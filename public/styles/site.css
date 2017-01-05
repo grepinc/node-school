@@ -24,15 +24,12 @@ body {
 
 .content, header {
    color: black;
+   background-color: white;
+   border-radius: 0.2em;
 }
 
 .content h1, header h1 {
    color: blue;
-}
-
-header, .content {
-   background-color: white;
-   border-radius: 0.2em;
 }
 
 div.bordered {

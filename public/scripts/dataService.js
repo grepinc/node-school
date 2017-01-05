@@ -1,5 +1,5 @@
 (function(){
-   function dataAccess($http){
+   function dataAccess($http, utils){
       var http = $http;
       var ships = {};
       var props = { version: null, shipsCount: null, ships: null };
@@ -14,6 +14,17 @@
          }
          else {
             http.get("api/ships/"+index).then(function(response){
+               var ship = response.data;
+               ship.gradeClass = {};
+               for(var prop in ship.grades){
+                  ship.gradeClass[prop] = utils.bootstrap.gradeToClass(ship.grades[prop]);
+               }
+
+               var types = ship.weaponTypes;
+               for(var prop in types){
+                  types[prop].gradeClass = utils.bootstrap.gradeToClass(types[prop].grade);
+                  types[prop].type = prop;
+               }
                ships[index] = response.data;
                task.resolve(response.data);
             });
@@ -84,7 +95,7 @@
       }
    }
 
-   var app = angular.module("schoolAngularApp");
+   var app = angular.defaultModule();
    app.factory("data", dataAccess);
    app.factory("nav", navUtils)
 }());

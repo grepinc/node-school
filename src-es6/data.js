@@ -14,6 +14,34 @@ export var ships = [
                speed: 30,
                length: 55,
                beam: 10,
+               grades: {
+                  size: 3,
+                  endurance: 2,
+                  weapons: 3,
+                  overall: 3
+               },
+               weaponTypes: {
+                  artilery: {
+                     grade: 2,
+                     note: "76mm"
+                  },
+                  antiAir: {
+                     grade: 2,
+                     note: "tactical"
+                  },
+                  ASW: {
+                     grade: 3,
+                     note: "none"
+                  },
+                  antiShip: {
+                     grade: 3,
+                     note: "none"
+                  },
+                  strategic: {
+                     grade: 3,
+                     note: "none"
+                  }
+               },
                weapons: [
                   {
                      type: "artilery",
@@ -47,6 +75,34 @@ export var ships = [
                speed: 30,
                length: 65,
                beam: 10,
+               grades: {
+                  size: 3,
+                  endurance: 2,
+                  weapons: 2,
+                  overall: 2
+               },
+               weaponTypes: {
+                  artilery: {
+                     grade: 2,
+                     note: "76mm"
+                  },
+                  antiAir: {
+                     grade: 2,
+                     note: "tactical"
+                  },
+                  ASW: {
+                     grade: 1,
+                     note: "torpedos, launcher, helicopter"
+                  },
+                  antiShip: {
+                     grade: 3,
+                     note: "none"
+                  },
+                  strategic: {
+                     grade: 3,
+                     note: "none"
+                  }
+               },
                weapons: [
                   {
                      type: "artilery",
@@ -90,6 +146,34 @@ export var ships = [
                speed: 30,
                length: 55,
                beam: 10,
+               grades: {
+                  size: 3,
+                  endurance: 2,
+                  weapons: 3,
+                  overall: 3
+               },
+               weaponTypes: {
+                  artilery: {
+                     grade: 2,
+                     note: "76mm"
+                  },
+                  antiAir: {
+                     grade: 2,
+                     note: "tactical"
+                  },
+                  ASW: {
+                     grade: 3,
+                     note: "none"
+                  },
+                  antiShip: {
+                     grade: 3,
+                     note: "none"
+                  },
+                  strategic: {
+                     grade: 3,
+                     note: "none"
+                  }
+               },
                weapons: [
                   {
                      type: "artilery",
@@ -118,6 +202,34 @@ export var ships = [
                speed: 26,
                length: 75,
                beam: 11,
+               grades: {
+                  size: 2,
+                  endurance: 3,
+                  weapons: 2,
+                  overall: 2
+               },
+               weaponTypes: {
+                  artilery: {
+                     grade: 1,
+                     note: "100mm"
+                  },
+                  antiAir: {
+                     grade: 2,
+                     note: "tactical"
+                  },
+                  ASW: {
+                     grade: 3,
+                     note: "none"
+                  },
+                  antiShip: {
+                     grade: 1,
+                     note: "Kalibar-NK"
+                  },
+                  strategic: {
+                     grade: 1,
+                     note: "Kalibar-NK"
+                  }
+               },
                weapons: [
                   {
                      type: "artilery",
@@ -167,6 +279,34 @@ export var ships = [
                speed: 30,
                length: 109,
                beam: 13,
+               grades: {
+                  size: 1,
+                  endurance: 1,
+                  weapons: 1,
+                  overall: 1
+               },
+               weaponTypes: {
+                  artilery: {
+                     grade: 1,
+                     note: "100mm"
+                  },
+                  antiAir: {
+                     grade: 1,
+                     note: "area"
+                  },
+                  ASW: {
+                     grade: 1,
+                     note: "torpedos, helicopter"
+                  },
+                  antiShip: {
+                     grade: 1,
+                     note: "Kalibar-NK"
+                  },
+                  strategic: {
+                     grade: 1,
+                     note: "Kalibar-NK"
+                  }
+               },
                weapons: [
                   {
                      type: "artilery",
@@ -211,6 +351,34 @@ export var ships = [
                speed: 26,
                length: 104,
                beam: 11,
+               grades: {
+                  size: 1,
+                  endurance: 2,
+                  weapons: 1,
+                  overall: 1
+               },
+               weaponTypes: {
+                  artilery: {
+                     grade: 1,
+                     note: "100mm"
+                  },
+                  antiAir: {
+                     grade: 1,
+                     note: "area"
+                  },
+                  ASW: {
+                     grade: 1,
+                     note: "torpedos, helicopter"
+                  },
+                  antiShip: {
+                     grade: 1,
+                     note: "Kalibar-NK"
+                  },
+                  strategic: {
+                     grade: 1,
+                     note: "Kalibar-NK"
+                  }
+               },
                weapons: [
                   {
                      type: "artilery",

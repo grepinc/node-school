@@ -7,6 +7,13 @@
    <h1>{{data.project}} {{data.class}}</h1>
    <p>{{data.quote}}</p>
    <a class="btn btn-danger" href="/#!/main">Back</a>
+
+   <div class="btn-group">
+      <button class="btn btn-{{data.gradeClass.size}}">Size</button>
+      <button class="btn btn-{{data.gradeClass.endurance}}">Endurance</button>
+      <button class="btn btn-{{data.gradeClass.weapons}}">Weapons</button>
+      <button class="btn btn-{{data.gradeClass.overall}}">Overall</button>
+   </div>
 </div>
 <div class="row">
    <div class="col-md-9 col-lg-8 content-left">
@@ -37,7 +44,13 @@
                {{w.name}} x {{w.count}}
             </li>
          </ul>
-         <h4>Weapons:</h4>
+         <h4>Grades</h4>
+         <ul class="list-group">
+            <li class="list-group-item list-group-item-{{w.gradeClass}}" ng-repeat="w in data.weaponTypes">
+               {{w.type}}: {{w.note}}
+            </li>
+         </ul>
+         <!--<h4>Weapons:</h4>
             <table class="table table-striped table-hover">
                <thead>
                   <th>Name</th>
@@ -51,7 +64,7 @@
                      <td>{{w.type}}</td>
                   </tr>
                </tbody>
-            </table>
+            </table>-->
       </div>
    </div>
 </div>

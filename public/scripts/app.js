@@ -1,5 +1,10 @@
 (function(){
-   var app = angular.module("schoolAngularApp", ["ngRoute"]);
+   var appName = "schoolAngularApp";
+   var app = angular.module(appName, ["ngRoute"]);
+
+   angular.defaultModule = function(){
+      return angular.module(appName);
+   }
 
    app.config(function($routeProvider){
       $routeProvider.when("/main", {
